@@ -9,6 +9,13 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
+  <div class="slider">
+    <div><img src="http://placehold.it/1200x600"></div>
+    <div><img src="http://placehold.it/1200x600"></div>
+    <div><img src="http://placehold.it/1200x600"></div>
+  </div>
+
+
 		<?php
 		if ( have_posts() ) :
 
