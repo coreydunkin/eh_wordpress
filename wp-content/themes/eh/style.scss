@@ -929,6 +929,38 @@ object {
 ## Custom Corey Styles
 --------------------------------------------------------------*/
 
+body {
+	background: #eee;
+	font-family: roboto, 'sans-serif';
+}
+
+.container {
+	max-width: 960px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 15px 0 15px;
+	display: block;
+}
+
+// nav styles
+#masthead {
+	position: fixed;
+	z-index: 9999;
+	width: 100%;
+	.logo {
+		float: left;
+	}
+	nav {
+		color: white;
+		font-weight: bold;
+		text-transform: uppercase;
+		#primary-menu {
+			float: right;
+			text-align: right;			
+		}
+	}
+}
+
 .slider {
 	max-height: 600px;
 	overflow: hidden;
