@@ -17,12 +17,14 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
-<link rel="stylesheet" type="text/css" href="wp-content/themes/eh/animate.css"/>
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/animate.css"/>
+
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/fonts/icons/style.css"/>
 
 <!-- slick carousel -->
-<link rel="stylesheet" type="text/css" href="wp-content/themes/eh/js/slick/slick.css"/>
-<link rel="stylesheet" type="text/css" href="wp-content/themes/eh/js/slick/slick-theme.css"/>
-<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/js/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/js/slick/slick-theme.css"/>
+<link href='https://fonts.googleapis.com/css?family=Roboto:200,400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 <?php wp_head(); ?>
 </head>
 

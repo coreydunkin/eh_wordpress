@@ -974,7 +974,22 @@ body {
 }
 
 // nav styles
+h3 {
+	font-family: roboto, 'sans-serif';
+	font-size: 18px;
+	margin: 0;
+	font-weight: bold;
+	color: #444;
+	text-transform: uppercase;
+}
 
+p {
+	margin: 0;
+	font-size: 16px;
+	font-weight: 300;
+	color: #444;
+	line-height: 19px;
+}
 
 #masthead {
 	position: fixed;
@@ -1026,33 +1041,230 @@ body {
 }
 
 .slider {
-	max-height: 600px;
+	
 	overflow: hidden;
+	background: #444;
+
+	&.sub {
+		.slick-slide {
+			max-height: 525px;
+			img {
+				opacity: 0.5;
+			}			
+		}
+	}
+	
+	.slick-prev {
+		width: 50px;
+    height: 50px;
+    z-index: 10;
+    background: none;
+    box-shadow: none;
+    left: 100px;
+    &:before {
+    	background-image: none;
+    	font-size: 50px;
+			content: "\e901";
+			font-family: 'icomoon';    	
+    }
+	}
+
+	.slick-next {
+		width: 50px;
+    height: 50px;
+    z-index: 10;
+    background: none;
+    box-shadow: none;
+    right: 100px;
+    &:before {
+    	background-image: none;
+    	font-size: 50px;
+			content: "\e902";
+			font-family: 'icomoon';    	
+    }
+	}
+
 	.slick-slide {
 		width: 100%;
+		max-height: 600px;
+		background-size: 100% auto;
+		background-repeat: no-repeat;
+		position: relative;
+  	opacity: 1!important;
+  	a.btn {
+  		text-align: center;
+  		border: 1px solid white;
+  		color: white;
+  		font-weight: 200;
+  		padding: 10px 50px 10px 50px;
+  		text-decoration: none;
+  		font-family: roboto, sans-serif;
+  		font-size: 21px;
+  		background: rgba(255,255,255,0.1);
+  		margin: 20px auto;
+  		display: block;
+  		width: 250px;
+  		@include transition(all .2s .1s);
+  		&:hover {
+  			background: rgba(255,255,255,0.8);
+  			color: #444;
+  		}
+  	}
 		img {
 			width: 100%;
+			z-index: 1;
+			opacity: 0.8;
+		}
+		.text-block {  
+			margin: auto;
+  		position: absolute;
+  		width: 100%;
+  		height: 100px;
+  		top: 0; bottom: 0; left: 0; right: 0;
+  		opacity: 1!important;
+  		z-index: 10;
+		}
+		h1 {
+			color: white;
+			text-transform: uppercase;
+			color: #fff;
+			text-align: center;
+			font-size: 50px;
+			margin: 0;
+			span {
+				font-weight: 300;
+			}
+		}
+		p.sub {
+			font-weight: 200;
+			text-align: center;
+			color: white;
+			font-size: 30px;
 		}
 	}
 }
 
 // thumbnail styles
+.thumbs {
+	h2 {
+		margin: 30px 0 15px 0;
+		text-transform: uppercase;
+		span {
+			font-weight: 200;
+		}
+	}
+}
 
 .thumbbox {
 	display: inline-block;
 	width: 33%;
 	padding: 0 3px 0 3px;
+	position: relative;
+	text-decoration: none;
+	@include transition(all .2s .1s);
+	* {
+		@include transition(all .2s .1s);
+	}
+	&:hover {
+		.arrow {
+			bottom: 70px;
+		}
+	}
+	&.follow {
+		.desc {
+			height: 325px;
+		}
+	}
 	.image {
 		margin: 0;
 		padding: 0;
+		height: 225px;
 		img {
 			width: 100%;
-			height: auto;
+			height: 230px;
+			width: auto;
 		}
 	}
 	.desc {
-		margin-top: -10px;
-		padding: 10px;
+		//margin-top: -10px;
+		padding: 20px;
 		background: white;
+		overflow: hidden;
+		height: 100px;
+		position: relative;
+		z-index: 10;
+  	text-overflow: ellipsis;
+	}
+	.arrow {
+		z-index: 5;
+		left:0;
+		right:0;
+		margin-left:auto;
+		margin-right:auto;
+		position: absolute;
+		margin: 0 auto;
+		display: inline-block;
+		content: '';
+		width: 50px;
+		height: 50px;
+		background: #fff;
+		transform: rotate(45deg);
+		bottom: 10px;
+	}	
+}
+
+// footer styles
+
+footer {
+	margin: 20px 0 0 0;
+	background: #444;
+	color: white;
+	padding: 20px 0 20px 0;
+	a {
+		color: white;
+	}
+	.social-container {
+		float: left;
+		width: 33%;
+		display: inline-block;
+		padding: 12px 3px 0 3px;
+	}
+	a.social {
+			color: white;
+			list-style: none;
+			display: inline;
+			font-size: 24px;
+			margin: 0 5px 0 0;
+			position: relative;
+			text-decoration: none;		
+	}
+
+	.text-container {
+		display: inline-block;
+		float: left;
+		width: 33%;
+		padding: 0 3px 0 3px;
+	}
+
+	h1 {
+		margin: 0;
+		text-align: center;
+		text-transform: uppercase;
+		span {
+			font-weight: 300;
+		}
+	}
+
+	.copyright {
+		float: right;
+		display: inline-block;
+		width: 33%;
+		padding: 12px 3px 0 3px;
+		p.small {
+			color: white;
+			font-size: 10px;
+			text-align: right;
+			line-height: 12px;
+		}
 	}
 }

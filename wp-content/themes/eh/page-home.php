@@ -10,70 +10,94 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
   <div class="slider">
-    <div><img src="http://placehold.it/1200x600"></div>
-    <div><img src="http://placehold.it/1200x600"></div>
-    <div><img src="http://placehold.it/1200x600"></div>
+    <div>
+    	<div class="text-block">
+    		<h1>STEPHANIE <span>SHEPARD</span></h1>
+    		<p class="sub">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+  			<a href="#" class="btn">view feature</a>
+    	</div>
+    	<img class="sliderimg" src="<?php bloginfo('stylesheet_directory'); ?>/img/slider1.jpg" />
+    </div>
+    <div>
+    	<div class="text-block">
+    		<h1>STEPHANIE <span>SHEPARD</span></h1>
+    		<p class="sub">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+  			<a href="#" class="btn">view feature</a>
+    	</div>
+    	<img class="sliderimg" src="<?php bloginfo('stylesheet_directory'); ?>/img/slider1.jpg" />
+    </div>
+    <div>
+    	<div class="text-block">
+    		<h1>STEPHANIE <span>SHEPARD</span></h1>
+    		<p class="sub">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+  			<a href="#" class="btn">view feature</a>
+    	</div>
+    	<img class="sliderimg" src="<?php bloginfo('stylesheet_directory'); ?>/img/slider1.jpg" />
+    </div>
   </div>
 
   
-
-
-
-
-		<?php
-		if ( have_posts() ) :
-
-			if ( is_home() && ! is_front_page() ) : ?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
-
-			<?php
-			endif;
-
-			/* Start the Loop */
-			while ( have_posts() ) : the_post();
-
-				/*
-				 * Include the Post-Format-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_format() );
-
-			endwhile;
-
-			the_posts_navigation();
-
-		else :
-
-			get_template_part( 'template-parts/content', 'none' );
-
-		endif; ?>
-
-<div class="container">
+<div class="thumbs container">
 	
+  <!-- FEATURES SECTION -->
 
-  <div class="thumbbox">
-  	<div class="image"><img src="http://placehold.it/1200x600" alt=""></div>
+  <h2>LATEST <span>FEATURES</span></h2>
+  <a class="thumbbox" href="#">
+  	<div class="image"><img src="http://placehold.it/300x230" alt=""></div>
   	<div class="desc">
-  		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus aperiam assumenda libero aut tenetur harum sed ipsam, autem, sit perferendis, voluptates. Ea praesentium aliquam, omnis amet nihil corporis, ducimus eveniet.
+  		<h3>LUNA PARK</h3>
+  		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
   	</div>
-  </div>
+  	<div class="arrow"></div>
+  </a>
 
-  <div class="thumbbox">
-  	<div class="image"><img src="http://placehold.it/1200x600" alt=""></div>
+  <a class="thumbbox" href="#">
+  	<div class="image"><img src="http://placehold.it/300x230" alt=""></div>
   	<div class="desc">
-  		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus aperiam assumenda libero aut tenetur harum sed ipsam, autem, sit perferendis, voluptates. Ea praesentium aliquam, omnis amet nihil corporis, ducimus eveniet.
+  		<h3>LUNA PARK</h3>
+  		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
   	</div>
-  </div>
+  	<div class="arrow"></div>
+  </a>
 
-  <div class="thumbbox">
-  	<div class="image"><img src="http://placehold.it/1200x600" alt=""></div>
+  <a class="thumbbox follow" href="#">
   	<div class="desc">
-  		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus aperiam assumenda libero aut tenetur harum sed ipsam, autem, sit perferendis, voluptates. Ea praesentium aliquam, omnis amet nihil corporis, ducimus eveniet.
+  		<h3>FOLLOW US</h3>
+  		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
   	</div>
-  </div>
+  	<div class="arrow"></div>
+  </a>
+
+
+  <!-- FEATURES SECTION -->
+
+  <h2>TOP <span>MODELS</span></h2>
+  <a class="thumbbox" href="#">
+  	<div class="image"><img src="http://placehold.it/300x230" alt=""></div>
+  	<div class="desc">
+  		<h3>LUNA PARK</h3>
+  		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+  	</div>
+  	<div class="arrow"></div>
+  </a>
+
+  <a class="thumbbox" href="#">
+  	<div class="image"><img src="http://placehold.it/300x230" alt=""></div>
+  	<div class="desc">
+  		<h3>LUNA PARK</h3>
+  		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+  	</div>
+  	<div class="arrow"></div>
+  </a>
+
+  <a class="thumbbox" href="#">
+  	<div class="image"><img src="http://placehold.it/300x230" alt=""></div>
+  	<div class="desc">
+  		<h3>LUNA PARK</h3>
+  		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+  	</div>
+  	<div class="arrow"></div>
+  </a>  
 
 </div><!-- end second container -->
 
@@ -82,7 +106,7 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
+
 get_footer();
 
 
