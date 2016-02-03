@@ -792,16 +792,46 @@ body {
 #masthead {
   position: fixed;
   z-index: 9999;
-  width: 100%; }
+  width: 100%;
+  -moz-transition: all 0.2s 0.1s;
+  -o-transition: all 0.2s 0.1s;
+  -webkit-transition: all 0.2s 0.1s;
+  transition: all 0.2s 0.1s; }
+  #masthead * {
+    -moz-transition: all 0.2s 0.1s;
+    -o-transition: all 0.2s 0.1s;
+    -webkit-transition: all 0.2s 0.1s;
+    transition: all 0.2s 0.1s; }
   #masthead .logo {
-    float: left; }
+    float: left;
+    background: url("img/icons/logo.png") no-repeat;
+    background-size: 100% auto;
+    display: inline-block;
+    text-indent: -9999px;
+    width: 88px;
+    height: 88px; }
   #masthead nav {
+    padding: 20px 0 20px 0;
     color: white;
     font-weight: bold;
     text-transform: uppercase; }
     #masthead nav #primary-menu {
+      padding-top: 25px;
       float: right;
       text-align: right; }
+      #masthead nav #primary-menu a {
+        color: white;
+        text-decoration: none; }
+  #masthead.down {
+    background: #ccc;
+    background: rgba(0, 0, 0, 0.4); }
+    #masthead.down .logo {
+      width: 44px;
+      height: 44px; }
+    #masthead.down nav {
+      padding: 10px 0 10px 0; }
+    #masthead.down #primary-menu {
+      padding-top: 10px; }
 
 .slider {
   max-height: 600px;
@@ -810,5 +840,20 @@ body {
     width: 100%; }
     .slider .slick-slide img {
       width: 100%; }
+
+.thumbbox {
+  display: inline-block;
+  width: 33%;
+  padding: 0 3px 0 3px; }
+  .thumbbox .image {
+    margin: 0;
+    padding: 0; }
+    .thumbbox .image img {
+      width: 100%;
+      height: auto; }
+  .thumbbox .desc {
+    margin-top: -10px;
+    padding: 10px;
+    background: white; }
 
 /*# sourceMappingURL=style.css.map */

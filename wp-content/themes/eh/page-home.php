@@ -15,6 +15,10 @@ get_header(); ?>
     <div><img src="http://placehold.it/1200x600"></div>
   </div>
 
+  
+
+
+
 
 		<?php
 		if ( have_posts() ) :
@@ -46,6 +50,33 @@ get_header(); ?>
 			get_template_part( 'template-parts/content', 'none' );
 
 		endif; ?>
+
+<div class="container">
+	
+
+  <div class="thumbbox">
+  	<div class="image"><img src="http://placehold.it/1200x600" alt=""></div>
+  	<div class="desc">
+  		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus aperiam assumenda libero aut tenetur harum sed ipsam, autem, sit perferendis, voluptates. Ea praesentium aliquam, omnis amet nihil corporis, ducimus eveniet.
+  	</div>
+  </div>
+
+  <div class="thumbbox">
+  	<div class="image"><img src="http://placehold.it/1200x600" alt=""></div>
+  	<div class="desc">
+  		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus aperiam assumenda libero aut tenetur harum sed ipsam, autem, sit perferendis, voluptates. Ea praesentium aliquam, omnis amet nihil corporis, ducimus eveniet.
+  	</div>
+  </div>
+
+  <div class="thumbbox">
+  	<div class="image"><img src="http://placehold.it/1200x600" alt=""></div>
+  	<div class="desc">
+  		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus aperiam assumenda libero aut tenetur harum sed ipsam, autem, sit perferendis, voluptates. Ea praesentium aliquam, omnis amet nihil corporis, ducimus eveniet.
+  	</div>
+  </div>
+
+</div><!-- end second container -->
+
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

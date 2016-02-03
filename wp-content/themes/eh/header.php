@@ -17,6 +17,8 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
+<link rel="stylesheet" type="text/css" href="wp-content/themes/eh/animate.css"/>
+
 <!-- slick carousel -->
 <link rel="stylesheet" type="text/css" href="wp-content/themes/eh/js/slick/slick.css"/>
 <link rel="stylesheet" type="text/css" href="wp-content/themes/eh/js/slick/slick-theme.css"/>
