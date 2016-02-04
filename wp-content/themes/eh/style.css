@@ -788,6 +788,8 @@ body {
   margin: 0 auto;
   padding: 0 15px 0 15px;
   display: block; }
+  .container.posts {
+    max-width: 560px; }
 
 h3 {
   font-family: roboto, 'sans-serif';
@@ -836,7 +838,8 @@ p {
       text-align: right; }
       #masthead nav #primary-menu a {
         color: white;
-        text-decoration: none; }
+        text-decoration: none;
+        margin: 0 0 0 10px; }
   #masthead.down {
     background: #ccc;
     background: rgba(0, 0, 0, 0.4); }
@@ -948,6 +951,7 @@ p {
   padding: 0 3px 0 3px;
   position: relative;
   text-decoration: none;
+  margin-bottom: 20px;
   -moz-transition: all 0.2s 0.1s;
   -o-transition: all 0.2s 0.1s;
   -webkit-transition: all 0.2s 0.1s;
@@ -1034,5 +1038,54 @@ footer {
       font-size: 10px;
       text-align: right;
       line-height: 12px; }
+
+#video {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 5;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto; }
+
+.smaller-container {
+  max-width: 460px;
+  width: 100%;
+  margin: 0 auto; }
+
+.breakout {
+  margin: 20px auto; }
+  .breakout h3 {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 100;
+    line-height: 32px; }
+
+.breakout-image {
+  margin: 20px auto; }
+  .breakout-image img {
+    width: 100%; }
+
+.image-left {
+  margin: 20px auto; }
+  .image-left img {
+    width: 50%;
+    float: left;
+    margin: 0 10px 0 0; }
+
+.image-right {
+  margin: 20px auto; }
+  .image-right p {
+    width: 45%;
+    float: left;
+    margin: 0 10px 0 0; }
+  .image-right img {
+    width: 50%;
+    float: right;
+    margin: 0 0 0 0; }
 
 /*# sourceMappingURL=style.css.map */

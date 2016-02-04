@@ -14,8 +14,33 @@ $(document).ready(function(){
       }
   }); //missing );
 
+
   //setting up slick 
   $('.slider').slick({
+
+  });
+
+  if($('body').hasClass('home')) {
+
+  video.play();
+
+  $('.slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
+      console.log('hello');
+        video.play();
+  });
+
+
+  }
+
+  // wrap second word in slider header
+  $('.text-block h1').html(function(){  
+    // separate the text by spaces
+    var text= $(this).text().split(' ');
+    // drop the last word and store it in a variable
+    var last = text.pop();
+    // join the text back and if it has more than 1 word add the span tag
+    // to the last word
+    return text.join(" ") + (text.length > 0 ? ' <span>'+last+'</span>' : last);   
   });
 
   // get the posts on load

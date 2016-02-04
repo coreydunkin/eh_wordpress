@@ -12,10 +12,10 @@ get_header(); ?>
   <div class="slider sub">
     <div>
     	<div class="text-block">
-    		<h1>OUR <span>FEATURES</span></h1>
-    		<p class="sub">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+    		<h1><?php the_field('features_title'); ?></span></h1>
+    		<p class="sub"><?php the_field('features_sub_header'); ?></p>
     	</div>
-    	<img class="sliderimg" src="<?php bloginfo('stylesheet_directory'); ?>/img/subhero.jpg" />
+    	<img class="sliderimg" src="<?php the_field('features_image'); ?>" />
     </div>
   </div>
 
@@ -32,7 +32,7 @@ get_header(); ?>
     </div>
     <div class="desc">
       <h3><?php the_title(); ?></h3>
-      <?php the_excerpt(); ?>
+      <p><?php echo substr(get_the_excerpt(), 0,61); ?>...</p>
     </div>
     <div class="arrow"></div>
   </a>
