@@ -17,8 +17,9 @@ $(document).ready(function(){
 
   //setting up slick 
   $('.slider').slick({
-
+    //adaptiveHeight: true,
   });
+
 
   if($('body').hasClass('home')) {
 

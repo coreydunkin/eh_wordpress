@@ -343,12 +343,6 @@ dt {
 dd {
   margin: 0 1.5em 1.5em; }
 
-img {
-  height: auto;
-  /* Make sure images are scaled correctly. */
-  max-width: 100%;
-  /* Adhere to container width. */ }
-
 table {
   margin: 0 0 1.5em;
   width: 100%; }
@@ -858,6 +852,18 @@ p {
     max-height: 525px; }
     .slider.sub .slick-slide img {
       opacity: 0.5; }
+  .slider .sliderimg {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto; }
+    .slider .sliderimg.wide {
+      max-width: 100%;
+      max-height: 100%;
+      height: auto; }
+    .slider .sliderimg.tall {
+      max-height: 100%;
+      max-width: 100%;
+      width: auto; }
   .slider .slick-prev {
     width: 50px;
     height: 50px;
@@ -888,7 +894,8 @@ p {
     background-size: 100% auto;
     background-repeat: no-repeat;
     position: relative;
-    opacity: 1 !important; }
+    opacity: 1 !important;
+    overflow: hidden; }
     .slider .slick-slide a.btn {
       text-align: center;
       border: 1px solid white;

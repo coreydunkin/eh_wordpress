@@ -407,8 +407,8 @@ dd {
 }
 
 img {
-	height: auto; /* Make sure images are scaled correctly. */
-	max-width: 100%; /* Adhere to container width. */
+	//height: auto; /* Make sure images are scaled correctly. */
+	//max-width: 100%; /* Adhere to container width. */
 }
 
 table {
@@ -1049,6 +1049,8 @@ p {
 	overflow: hidden;
 	background: #444;
 
+
+
 	&.sub {
 		.slick-slide {
 			max-height: 525px;
@@ -1057,6 +1059,24 @@ p {
 			}			
 		}
 	}
+
+.sliderimg {
+
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+
+	&.wide {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+	}
+	&.tall {
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+	}
+}
 	
 	.slick-prev {
 		width: 50px;
@@ -1095,6 +1115,7 @@ p {
 		background-repeat: no-repeat;
 		position: relative;
   	opacity: 1!important;
+  	overflow: hidden;
   	a.btn {
   		text-align: center;
   		border: 1px solid white;
