@@ -25,6 +25,8 @@ get_header(); ?>
   
 <div class="container posts">
 	
+	<?php the_field('content'); ?>
+
   <!-- POSTS SECTION -->
 	<div class="smaller-container">
 		<p>
