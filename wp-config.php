@@ -20,42 +20,42 @@
 define('WP_MEMORY_LIMIT', '64M');
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'eh');
-
-/** MySQL database username */
-define('DB_USER', 'root');
-
-/** MySQL database password */
-define('DB_PASSWORD', '');
-
-/** MySQL hostname */
-define('DB_HOST', 'localhost');
-
-/** Database Charset to use in creating database tables. */
-define('DB_CHARSET', 'utf8mb4');
-
-/** The Database Collate type. Don't change this if in doubt. */
-define('DB_COLLATE', '');
-
-
-// // ** MySQL settings - You can get this info from your web host ** //
-// /** The name of the database for WordPress */
-// define('DB_NAME', 'wp397');
+// define('DB_NAME', 'eh');
 
 // /** MySQL database username */
-// define('DB_USER', 'wp397');
+// define('DB_USER', 'root');
 
 // /** MySQL database password */
-// define('DB_PASSWORD', 'S7PT[3p-3S');
+// define('DB_PASSWORD', '');
 
 // /** MySQL hostname */
 // define('DB_HOST', 'localhost');
 
 // /** Database Charset to use in creating database tables. */
-// define('DB_CHARSET', 'utf8');
+// define('DB_CHARSET', 'utf8mb4');
 
 // /** The Database Collate type. Don't change this if in doubt. */
 // define('DB_COLLATE', '');
+
+
+// ** MySQL settings - You can get this info from your web host ** //
+/** The name of the database for WordPress */
+define('DB_NAME', 'wp397');
+
+/** MySQL database username */
+define('DB_USER', 'wp397');
+
+/** MySQL database password */
+define('DB_PASSWORD', 'S7PT[3p-3S');
+
+/** MySQL hostname */
+define('DB_HOST', 'localhost');
+
+/** Database Charset to use in creating database tables. */
+define('DB_CHARSET', 'utf8');
+
+/** The Database Collate type. Don't change this if in doubt. */
+define('DB_COLLATE', '');
 
 
 /**#@+

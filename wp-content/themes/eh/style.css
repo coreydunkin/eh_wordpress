@@ -124,7 +124,9 @@ sub {
   bottom: -0.25em; }
 
 img {
-  border: 0; }
+  border: 0;
+  width: 100%;
+  height: auto; }
 
 svg:not(:root) {
   overflow: hidden; }
@@ -976,8 +978,7 @@ p {
     height: 225px; }
     .thumbbox .image img {
       width: 100%;
-      height: 230px;
-      width: auto; }
+      height: 230px; }
   .thumbbox .desc {
     padding: 20px;
     background: white;
@@ -1056,6 +1057,41 @@ footer {
   right: 0;
   margin-left: auto;
   margin-right: auto; }
+
+.su-column br, .su-row br {
+  display: none !important; }
+
+.su-row {
+  margin: 20px auto; }
+  .su-row p {
+    max-width: 460px;
+    width: 100%;
+    margin: 0 auto; }
+
+.su-column-inner {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 300;
+  color: #444;
+  line-height: 19px; }
+
+.su-quote-style-default {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-style: normal !important; }
+  .su-quote-style-default:before {
+    display: none !important; }
+  .su-quote-style-default:after {
+    display: none !important; }
+
+.su-quote-inner {
+  margin: 20px auto; }
+  .su-quote-inner h3 {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 100;
+    line-height: 32px;
+    font-style: normal; }
 
 .posts img {
   width: 100%;

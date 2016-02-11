@@ -144,6 +144,8 @@ sub {
 
 img {
 	border: 0;
+	width: 100%;
+	height: auto;
 }
 
 svg:not(:root) {
@@ -1210,7 +1212,6 @@ p {
 		img {
 			width: 100%;
 			height: 230px;
-			width: auto;
 		}
 	}
 	.desc {
@@ -1319,6 +1320,53 @@ footer {
 }
 
 // posts styles
+
+// overriding the shortcode styles
+.su-column, .su-row {
+	br {
+		display: none!important;
+	}
+}
+
+.su-row {
+	margin: 20px auto;
+	p {
+		max-width: 460px;
+		width: 100%;
+		margin: 0 auto;		
+	}
+}
+
+.su-column-inner {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 300;
+  color: #444;
+  line-height: 19px;
+}
+
+.su-quote-style-default {
+	margin: 0!important;
+	padding: 0!important;
+	font-style: normal!important;
+	&:before {
+		display: none!important;
+	}
+	&:after {
+		display: none!important;
+	}
+}
+
+.su-quote-inner {
+	margin: 20px auto;
+	h3 {
+		font-size: 30px;
+		text-align: center;
+		font-weight: 100;
+		line-height: 32px;
+		font-style: normal;
+	}
+}
 
 .posts {
 	img {

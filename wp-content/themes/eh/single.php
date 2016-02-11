@@ -28,7 +28,7 @@ get_header(); ?>
 	<?php the_field('content'); ?>
 
   <!-- POSTS SECTION -->
-	<div class="smaller-container">
+	<!--<div class="smaller-container">
 		<p>
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit voluptas 
 			quidem officia architecto eveniet ipsum cum quas error, 
@@ -72,7 +72,7 @@ get_header(); ?>
 			optio quaerat veniam!
 		</p>
 		<img src="http://placehold.it/560x250" alt="">
-	</div>		
+	</div>-->		
 
 </div><!-- end container -->
 
