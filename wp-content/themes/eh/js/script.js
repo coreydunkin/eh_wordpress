@@ -14,6 +14,10 @@ $(document).ready(function(){
       }
   }); //missing );
 
+  setTimeout(function() {
+    //$('.desc').equalHeights();
+  }, 200);
+
 
   //setting up slick 
   $('.slider').slick({
