@@ -1484,6 +1484,48 @@ and (min-width : 1824px) {
 /* Small screens ----------- */
 @media only screen
 and (min-width : 0px) and (max-width: 600px) {
+
+
+	.slider.sub {
+		.slick-slide {
+			height: auto!important;
+			.text-block {
+				h1 {
+					font-size: 20px;
+					line-height: 20px;
+					margin-top: 70px;
+				}
+				p.sub {
+					display: none;
+				}
+			}
+			img {
+				height: auto!important;
+				width: 100%;
+				min-height: auto;
+			}
+		}
+	}
+
+	.slider {
+		.slick-slide {
+			.text-block {
+				padding: 0 50px;
+			}
+			a.btn {
+				width: 180px;
+				padding: 10px;
+				font-size: 14px;
+			}
+		}
+	}
+
+	.menu-toggle {
+		&[aria-expanded="true"] {
+    	margin-right: 143px;			
+		}
+	}
+
 	.home {
 		.thumbs {
 			display: none;
@@ -1521,11 +1563,73 @@ and (min-width : 0px) and (max-width: 600px) {
 			}
 		}
 	}
+
+
+
+	#masthead {
+		nav {
+			#primary-menu {
+
+		    background: #fff;
+		    padding: 0;
+		    margin: 0;
+		    height: 100vh;
+		    margin-right: -20px;
+		    margin-top: -20px;
+		    width: 240px;
+				padding-top: 70px;
+				-webkit-transition: all 1s; /* Safari */
+				transition: all 1s;
+				&[aria-expanded="false"] {
+					-webkit-transition: all 1s; /* Safari */
+					transition: all 1s;					
+
+				}
+
+				&[aria-expanded="true"] {
+					-webkit-transition: all 1s; /* Safari */
+					transition: all 1s;					
+
+				}
+				a {
+					color: black;
+					font-weight: 300;
+					font-size: 33px;
+				}
+			}
+		}
+	}
+
+	.main-navigation li {
+	 float: none;
+	 position: relative;
+	 text-align: left;	
+	}
+
+
+
 }
+
 
 @media only screen
 and (min-width : 0px) and (max-width: 960px) {
 /* STYLES GO HERE */
+
+	.menu-toggle {
+		position: fixed;
+		right: 10px;
+		top: 30px;
+		text-indent: -9999px;
+		z-index: 9999;
+	}
+	
+	#masthead {
+		.logo {
+			width: 55px;
+			height: 55px;
+		}	
+	}
+
 
 	footer {
 
@@ -1589,6 +1693,15 @@ and (min-width : 0px) and (max-width: 960px) {
 	}
 }
 
+#wpadminbar {
+	display: none!important;
+}
+
+
+@media screen and ( max-width: 781px ) {
+		html { margin-top: 0px !important; }
+		* html body { margin-top: 0px !important; }
+}
 @media only screen
 and (min-width : 0px) and (max-width: 1024px) {
 /* STYLES GO HERE */
