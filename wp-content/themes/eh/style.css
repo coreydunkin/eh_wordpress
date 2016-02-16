@@ -1159,8 +1159,12 @@ footer {
   /* STYLES GO HERE */ }
 /* Small screens ----------- */
 @media only screen and (min-width: 0px) and (max-width: 600px) {
+  .slick-slider {
+    margin-bottom: 0; }
+
   .slider.sub .slick-slide {
-    height: auto !important; }
+    height: auto !important;
+    margin-bottom: 0; }
     .slider.sub .slick-slide .text-block h1 {
       font-size: 20px;
       line-height: 20px;
@@ -1180,7 +1184,9 @@ footer {
     font-size: 14px; }
 
   .menu-toggle[aria-expanded="true"] {
-    margin-right: 143px; }
+    margin-right: 180px;
+    color: #222;
+    box-shadow: none; }
 
   .home .thumbs {
     display: none; }
@@ -1242,9 +1248,15 @@ footer {
   .menu-toggle {
     position: fixed;
     right: 10px;
-    top: 30px;
-    text-indent: -9999px;
-    z-index: 9999; }
+    top: 20px;
+    z-index: 9999;
+    background: none;
+    box-shadow: none;
+    border: none;
+    font-size: 30px;
+    text-shadow: none;
+    color: white;
+    padding: 5px; }
 
   #masthead .logo {
     width: 55px;

@@ -1484,11 +1484,15 @@ and (min-width : 1824px) {
 /* Small screens ----------- */
 @media only screen
 and (min-width : 0px) and (max-width: 600px) {
-
+	
+	.slick-slider {
+		margin-bottom: 0;
+	}
 
 	.slider.sub {
 		.slick-slide {
 			height: auto!important;
+			margin-bottom: 0;
 			.text-block {
 				h1 {
 					font-size: 20px;
@@ -1522,7 +1526,9 @@ and (min-width : 0px) and (max-width: 600px) {
 
 	.menu-toggle {
 		&[aria-expanded="true"] {
-    	margin-right: 143px;			
+    	margin-right: 180px;
+    	color: #222;
+    	box-shadow: none;
 		}
 	}
 
@@ -1618,9 +1624,17 @@ and (min-width : 0px) and (max-width: 960px) {
 	.menu-toggle {
 		position: fixed;
 		right: 10px;
-		top: 30px;
-		text-indent: -9999px;
+		top: 20px;
+		//text-indent: -9999px;
 		z-index: 9999;
+		background: none;
+		box-shadow: none;
+		border: none;
+		font-size: 30px;
+		text-shadow: none;
+		color: white;
+		//border: 1px solid red;
+		padding: 5px;
 	}
 	
 	#masthead {

@@ -58,4 +58,8 @@ $(document).ready(function(){
     }
   });  
 
+  $('.toggled').on('click', function() {
+    console.log('bruce willis is a dog');
+  })
+
 });
