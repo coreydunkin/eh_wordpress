@@ -30,7 +30,7 @@ get_header(); ?>
     <div class="image">
       <?php the_post_thumbnail(); ?>
     </div>
-    <div class="desc">
+    <div class="desc subdesc">
       <h3><?php the_title(); ?></h3>
       <p><?php echo substr(get_the_excerpt(), 0,61); ?>...</p>
     </div>

@@ -35,10 +35,12 @@
 	<header id="masthead" class="site-header" role="banner">
 
 		<div class="container">
+			<div class="off-state"></div>
 			<nav id="site-navigation" class="main-navigation" role="navigation">
-				<div class="logo">
+				
+				<a class="logo" href="http://localhost/eh_wordpress/">
 					EH
-				</div>				
+				</a>				
 				<button class="menu-toggle icon-menu" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( '', 'eh' ); ?></button>
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 			</nav><!-- #site-navigation -->			

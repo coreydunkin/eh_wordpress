@@ -15,7 +15,7 @@ $(document).ready(function(){
   }); //missing );
 
   setTimeout(function() {
-    //$('.desc').equalHeights();
+    $('.subdesc').equalHeights();
   }, 200);
 
 
@@ -29,9 +29,11 @@ $(document).ready(function(){
 
   video.play();
 
+  $('.site-footer').addClass('fixed');
+
   $('.slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
-      console.log('hello');
-        video.play();
+      //console.log('hello');
+      video.play();
   });
 
 
@@ -58,8 +60,28 @@ $(document).ready(function(){
     }
   });  
 
-  $('.toggled').on('click', function() {
-    console.log('bruce willis is a dog');
-  })
+
+  $('#content').on('click', function() {
+    //console.log('hahahaha');
+    //$('.main-navigation').removeClass('toggled');
+  });
+
+  $('.menu-toggle').on('click', function(event) {
+    if ($('.off-state').is(':visible')) {
+      $('.off-state').hide();
+    } else {
+      $('.off-state').show();
+    };
+  });
+
+  $('.off-state').on('click', function() {
+    if ($('.off-state').is(':visible')) {
+      console.log('lflf');
+      $('.menu-toggle').trigger('click');
+    };
+    
+    
+  });
+
 
 });

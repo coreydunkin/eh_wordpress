@@ -1,4 +1,4 @@
-<?php /* Template Name: Models */ ?>
+<?php /* Template Name: Contact */ ?>
 
 
 <?php
@@ -6,25 +6,25 @@
 
 get_header(); ?>
 
-  <div id="primary" class="content-area">
-    <main id="main" class="site-main" role="main">
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
 
   <div class="slider sub">
     <div>
-      <div class="text-block">
-        <h1><?php the_field('models_title'); ?></span></h1>
-        <p class="sub"><?php the_field('models_sub_header'); ?></p>
-      </div>
-      <img class="sliderimg" src="<?php the_field('models_image'); ?>" />
+    	<div class="text-block">
+    		<h1><?php the_field('features_title'); ?></span></h1>
+    		<p class="sub"><?php the_field('features_sub_header'); ?></p>
+    	</div>
+    	<img class="sliderimg" src="<?php the_field('features_image'); ?>" />
     </div>
   </div>
 
   
 <div class="thumbs container">
-  
-  <!-- models SECTION -->
-<h2>OUR <span>models</span></h2>
-<?php query_posts('category_name=models'); ?>
+	
+  <!-- FEATURES SECTION -->
+<h2>OUR <span>FEATURES</span></h2>
+<?php query_posts('category_name=features'); ?>
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
   <a class="thumbbox" href="<?php the_permalink(); ?>">
     <div class="image">
@@ -41,8 +41,8 @@ get_header(); ?>
 </div><!-- end second container -->
 
 
-    </main><!-- #main -->
-  </div><!-- #primary -->
+		</main><!-- #main -->
+	</div><!-- #primary -->
 
 <?php
 
