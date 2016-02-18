@@ -12,34 +12,19 @@ get_header(); ?>
   <div class="slider sub">
     <div>
     	<div class="text-block">
-    		<h1><?php the_field('features_title'); ?></span></h1>
-    		<p class="sub"><?php the_field('features_sub_header'); ?></p>
+    		<h1><?php the_field('contact_title'); ?></span></h1>
+    		<p class="sub"><?php the_field('contact_sub_header'); ?></p>
     	</div>
-    	<img class="sliderimg" src="<?php the_field('features_image'); ?>" />
+    	<img class="sliderimg" src="<?php the_field('contact_image'); ?>" />
     </div>
   </div>
 
   
 <div class="thumbs container">
 	
-  <!-- FEATURES SECTION -->
-<h2>OUR <span>FEATURES</span></h2>
-<?php query_posts('category_name=features'); ?>
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-  <a class="thumbbox" href="<?php the_permalink(); ?>">
-    <div class="image">
-      <?php the_post_thumbnail(); ?>
-    </div>
-    <div class="desc subdesc">
-      <h3><?php the_title(); ?></h3>
-      <p><?php echo substr(get_the_excerpt(), 0,61); ?>...</p>
-    </div>
-    <div class="arrow"></div>
-  </a>
-<?php endwhile; endif; ?>
-<?php wp_reset_query(); ?>
-</div><!-- end second container -->
+  <!-- contact SECTION -->
 
+    <?php the_field('contact_form'); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
