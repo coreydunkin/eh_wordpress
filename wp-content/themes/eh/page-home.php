@@ -135,6 +135,8 @@ get_header(); ?>
   	<div class="desc">
   		<h3>FOLLOW US</h3>
   		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+
+      <?php the_field('newsletter'); ?>
   	</div>
   	<div class="arrow"></div>
   </a>
