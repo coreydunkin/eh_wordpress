@@ -1162,6 +1162,9 @@ footer {
   /* STYLES GO HERE */ }
 /* Small screens ----------- */
 @media only screen and (min-width: 0px) and (max-width: 600px) {
+  .home .site-content {
+    padding-bottom: 0px; }
+
   .site-content {
     min-height: 100vh;
     padding-bottom: 50px; }
