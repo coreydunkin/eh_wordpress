@@ -1426,9 +1426,87 @@ footer {
 	}
 }
 
+// CONTACT FORM
 
+.contact.container {
+	h2 {
+		max-width: 460px;
+		width: 100%;
+		margin: 25px auto 15px auto;
+		span {
+			font-weight: 300;
+		}
+	}
 
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+}
 
+span.your-name {
+	input {
+		width: 48%;
+	}
+}
+
+span.your-email {
+	input {
+		width: 48%;
+		float: right;
+	}
+}
+
+.your-message {
+	textarea {
+		margin-top: 10px;
+	}
+}
+
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+    background: #3b3b3b;
+    border: none;
+    border-radius: 0px;
+    text-shadow: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 60px;
+    float: right;
+    font-weight: 400;
+    box-shadow: none!important;
+}
+
+.ajax-loader {
+	width: 18px;
+	height: auto;
+	margin-top: 10px;
+}
+
+.wpcf7-response-output {
+  max-width: 460px;
+  width: 100%;
+  margin: 10px auto;
+  color: white;
+  border: none;
+  &.wpcf7-mail-sent-ok {
+		background: #a1cd84;
+		border: none;
+  	margin: 10px auto;
+  }
+  &.wpcf7-validation-errors {
+		background: #ef6f75;
+		border: none;
+  	margin: 10px auto;
+  }
+}
+
+span.wpcf7-not-valid-tip {
+    color: #f00;
+    font-size: 1em;
+    display: block;
+    margin-top: 10px;
+    display: none;
+}
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen
@@ -1647,7 +1725,11 @@ and (min-width : 0px) and (max-width: 600px) {
 	 text-align: left;	
 	}
 
-
+	.contact {
+		span.break {
+			display: block;
+		}
+	}
 
 }
 

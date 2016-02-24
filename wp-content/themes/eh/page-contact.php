@@ -20,11 +20,14 @@ get_header(); ?>
   </div>
 
   
-<div class="thumbs container">
+<div class="contact container">
 	
   <!-- contact SECTION -->
 
     <?php the_field('contact_form'); ?>
+
+
+</div><!-- end second container -->
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

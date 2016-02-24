@@ -39,6 +39,17 @@ $(document).ready(function(){
 
   }
 
+
+
+
+
+$("p").find(":contains('Email:')").each(function(){
+    $this = $(this);
+
+    //Example replacement using HTML, but can also just us text() for simple changes
+    $this.prepend($("<span class='break'>").text(""));
+});
+
   // wrap second word in slider header
   $('.text-block h1').html(function(){  
     // separate the text by spaces
