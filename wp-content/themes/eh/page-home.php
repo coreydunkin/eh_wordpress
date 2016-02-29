@@ -131,15 +131,23 @@ get_header(); ?>
   <?php endwhile; ?>
 <?php endif; ?>  
 
-  <a class="thumbbox follow" href="#">
+  <div class="thumbbox follow" href="#">
   	<div class="desc">
   		<h3>FOLLOW US</h3>
   		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+      <br>
+      <ul class="social">
+        <li class="ig"><a href="" title="">FOLLOW US</a></li>
+        <li class="sc"><a href="" title="">EHSNAP</a></li>
+        <li class="fb"><a href="" title="">LIKE US</a></li>
+        <li class="tw"><a href="" title="">TWEET US</a></li>
+      </ul>
+
 
       <?php the_field('newsletter'); ?>
   	</div>
   	<div class="arrow"></div>
-  </a>
+  </div>
 
 
   <!-- FEATURES SECTION -->

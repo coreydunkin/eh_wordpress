@@ -1842,6 +1842,101 @@ and (min-width : 0px) and (max-width: 960px) {
 	display: none!important;
 }
 
+// social buttons
+
+ul.social {
+	margin: 0;
+	padding: 0;
+	li {
+		list-style: none;
+		background: #eee;
+		width: 47%;
+		display: inline-block;
+		box-sizing: border-box;
+		padding: 5px 5px 5px 40px;
+		position: relative;
+		margin-bottom: 5px;
+		color: white;
+		font-weight: 300;
+		font-size: 12px;
+		a {
+			color: white;
+			text-decoration: none;
+		}
+		&:hover {
+			opacity: 0.8;
+		}
+		&:before {
+			background: rgba(0,0,0,0.25);
+			content: "\e905";
+			width: 31px;
+			height: 100%;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			color: white;
+			padding: 6px 5px 5px 5px;
+			font-size: 1.3em;
+			text-align: center;
+		}
+		&:nth-child(1) {
+			margin-right: 10px;
+		}
+		&:nth-child(2) {
+			
+		}
+		&:nth-child(3) {
+			margin-right: 10px;
+		}
+		&:nth-child(4) {
+			
+		}
+
+		&.ig {
+			background: #1b5b89;
+			&:before {
+				content: "\e905";
+			}
+		}
+		&.sc {
+			background: #444444;
+			&:before {
+				content: "\e907";
+			}
+		}
+		&.fb {
+			background: #3b5793;
+			&:before {
+				content: "\e904";
+			}
+		}
+		&.tw {
+			background: #469cf8;
+			&:before {
+				content: "\f081";
+			}
+		}
+	}
+}
+
+// newsletter signup
+
+form.nsu-form {
+	label {
+		display: block;
+		text-align: left;
+		margin-bottom: 10px;
+		margin-top: 10px;
+	}
+	input {
+		width: 100%;
+		padding: 6px 5px;
+		margin-bottom: 10px;
+		&[type="submit"] {
+			padding: 10px;
+		}
+	}
+}
 
 @media screen and ( max-width: 781px ) {
 		html { margin-top: 0px !important; }
