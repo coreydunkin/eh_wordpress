@@ -983,7 +983,7 @@ p {
       width: 100%;
       height: 230px; }
   .thumbbox .desc {
-    padding: 20px;
+    padding: 15px;
     background: white;
     overflow: hidden;
     height: 100px;
@@ -1472,6 +1472,9 @@ form.nsu-form input {
   margin-bottom: 10px; }
   form.nsu-form input[type="submit"] {
     padding: 10px; }
+
+.nsu-error {
+  display: none; }
 
 @media screen and (max-width: 781px) {
   html {

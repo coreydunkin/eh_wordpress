@@ -1221,7 +1221,7 @@ p {
 	}
 	.desc {
 		//margin-top: -10px;
-		padding: 20px;
+		padding: 15px;
 		background: white;
 		overflow: hidden;
 		height: 100px;
@@ -1953,6 +1953,10 @@ form.nsu-form {
 			padding: 10px;
 		}
 	}
+}
+
+.nsu-error {
+	display: none;
 }
 
 @media screen and ( max-width: 781px ) {

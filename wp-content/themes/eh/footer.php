@@ -25,17 +25,12 @@
 					<h1>EURASIAN<span>HOTTIES</span></h1>
 				</div>
 				
-
 				<div class="copyright">
 					<p class="small">
 						Copyright 2016,<br>
 						Owned by Benjamin Au
 					</p>
 				</div>
-
-				
-
-
 		
 		</div>
 	</footer><!-- #colophon -->

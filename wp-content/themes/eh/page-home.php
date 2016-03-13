@@ -139,10 +139,17 @@ get_header(); ?>
   		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
       <br>
       <ul class="social">
+<<<<<<< HEAD
         <li class="ig"><a href="<?php the_field('ig_social'); ?>" title="">FOLLOW US</a></li>
         <li class="sc"><a href="<?php the_field('sc_social'); ?>" title="">EHSNAP</a></li>
         <li class="fb"><a href="<?php the_field('fb_social'); ?>" title="">LIKE US</a></li>
         <li class="tw"><a href="<?php the_field('tw_social'); ?>" title="">TWEET US</a></li>
+=======
+        <li class="ig"><a target="_blank" href="<?php the_field('ig_social'); ?>" title="">FOLLOW US</a></li>
+        <li class="sc"><a target="_blank" href="<?php the_field('sc_social'); ?>" title="">EHSNAP</a></li>
+        <li class="fb"><a target="_blank" href="<?php the_field('fb_social'); ?>" title="">LIKE US</a></li>
+        <li class="tw"><a target="_blank" href="<?php the_field('tw_social'); ?>" title="">TWEET US</a></li>
+>>>>>>> origin/master
       </ul>
 
 
