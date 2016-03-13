@@ -32,7 +32,8 @@ get_header(); ?>
     </div>
     <div class="desc subdesc">
       <h3><?php the_title(); ?></h3>
-      <p><?php echo substr(get_the_excerpt(), 0,61); ?>...</p>
+      <!--<p><?php echo substr(get_the_excerpt(), 0,61); ?>...</p>-->
+      <p><?php the_field('post_sub_header'); ?></p>
     </div>
     <div class="arrow"></div>
   </a>

@@ -788,7 +788,7 @@ body {
   padding: 0 15px 0 15px;
   display: block; }
   .container.posts {
-    max-width: 560px; }
+    max-width: 960px; }
 
 h3 {
   font-family: roboto, 'sans-serif';
@@ -1048,7 +1048,17 @@ footer {
       text-align: right;
       line-height: 12px; }
 
+.video-container {
+  background: #000;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  height: 600px;
+  display: block; }
+
 #video {
+  opacity: 0.7;
   min-width: 100%;
   min-height: 100%;
   width: auto;
@@ -1221,6 +1231,9 @@ span.wpcf7-not-valid-tip {
   /* STYLES GO HERE */ }
 /* Small screens ----------- */
 @media only screen and (min-width: 0px) and (max-width: 600px) {
+  .video-container {
+    display: none; }
+
   .home .site-content {
     padding-bottom: 0px; }
 

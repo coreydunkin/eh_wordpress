@@ -44,14 +44,16 @@ get_header(); ?>
         <a href="<?php echo $linkurl; ?>" class="btn"><?php echo $linktext; ?></a>
       </div>
       <?php if( $videomp4 ): ?>
-      <video id="video" controls preload="true" autoplay loop muted>
-      <?php endif; ?>
+      <div class="video-container">
+        <video id="video" controls preload="true" autoplay loop muted>
+        <?php endif; ?>
 
-        <source src="<?php echo $videomp4; ?>" type="video/mp4" > 
-        <!--<source src="<?php bloginfo('stylesheet_directory'); ?>/img/vid-example.ogv" type="video/ogv" >-->    
-        <source src="<?php echo $videowebm; ?>" type="video/webm" > 
-      <?php if( $videomp4 ): ?>
-      </video>
+          <source src="<?php echo $videomp4; ?>" type="video/mp4" > 
+          <!--<source src="<?php bloginfo('stylesheet_directory'); ?>/img/vid-example.ogv" type="video/ogv" >-->    
+          <source src="<?php echo $videowebm; ?>" type="video/webm" > 
+        <?php if( $videomp4 ): ?>
+        </video>
+      </div>
       <?php endif; ?>
       <img class="sliderimg" src="<?php echo $image; ?>" />
     </div>
@@ -137,10 +139,10 @@ get_header(); ?>
   		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
       <br>
       <ul class="social">
-        <li class="ig"><a href="" title="">FOLLOW US</a></li>
-        <li class="sc"><a href="" title="">EHSNAP</a></li>
-        <li class="fb"><a href="" title="">LIKE US</a></li>
-        <li class="tw"><a href="" title="">TWEET US</a></li>
+        <li class="ig"><a href="<?php the_field('ig_social'); ?>" title="">FOLLOW US</a></li>
+        <li class="sc"><a href="<?php the_field('sc_social'); ?>" title="">EHSNAP</a></li>
+        <li class="fb"><a href="<?php the_field('fb_social'); ?>" title="">LIKE US</a></li>
+        <li class="tw"><a href="<?php the_field('tw_social'); ?>" title="">TWEET US</a></li>
       </ul>
 
 

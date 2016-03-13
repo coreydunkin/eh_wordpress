@@ -16,9 +16,9 @@
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="container">
 				<div class="social-container">
-					<a class="social icon-ig" href="#"></a>
-					<a class="social icon-fb" href="#"></a>
-					<a class="social icon-sc" href="#"></a>
+					<a class="social icon-ig" href="<?php the_field('ig_social'); ?>"></a>
+					<a class="social icon-fb" href="<?php the_field('fb_social'); ?>"></a>
+					<a class="social icon-sc" href="<?php the_field('sc_social'); ?>"></a>
 				</div>
 				
 				<div class="text-container">
