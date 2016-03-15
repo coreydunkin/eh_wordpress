@@ -917,11 +917,18 @@ p {
       .slider .slick-slide a.btn:hover {
         background: rgba(255, 255, 255, 0.8);
         color: #444; }
+    .slider .slick-slide .overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: #000;
+      top: 0;
+      left: 0;
+      opacity: 0.3; }
     .slider .slick-slide img {
       min-height: 600px;
       width: auto;
       z-index: 1;
-      opacity: 0.8;
       min-width: 100%; }
     .slider .slick-slide .text-block {
       margin: auto;
@@ -1076,10 +1083,13 @@ footer {
 
 .su-row {
   margin: 20px auto; }
-  .su-row p {
+  .su-row p, .su-row h1, .su-row h2, .su-row h3, .su-row h4 {
     max-width: 460px;
     width: 100%;
     margin: 0 auto; }
+  .su-row h1, .su-row h2, .su-row h3, .su-row h4 {
+    line-height: normal;
+    margin-top: 20px; }
 
 .su-column-inner {
   margin: 0;
@@ -1244,9 +1254,13 @@ span.wpcf7-not-valid-tip {
   .slick-slider {
     margin-bottom: 0; }
 
+  .thumbbox .image {
+    height: auto; }
+
   .slider.sub .slick-slide {
     height: auto !important;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    width: 100%; }
     .slider.sub .slick-slide .text-block h1 {
       font-size: 20px;
       line-height: 20px;
@@ -1256,7 +1270,7 @@ span.wpcf7-not-valid-tip {
     .slider.sub .slick-slide img {
       height: auto !important;
       width: 100%;
-      min-height: auto; }
+      min-height: inherit !important; }
 
   .slider .slick-slide .text-block {
     padding: 0 50px; }
@@ -1284,11 +1298,24 @@ span.wpcf7-not-valid-tip {
     max-height: 100%;
     height: 100vh;
     width: auto; }
+    .home .slider .slick-slide .overlay {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      background: #000;
+      opacity: 0.3;
+      top: 0;
+      left: 0; }
+    .home .slider .slick-slide .background-backup {
+      height: 100%;
+      background-position: center center !important;
+      background-size: auto 100% !important; }
     .home .slider .slick-slide img {
       height: 100vh;
       min-height: 100%;
       width: auto;
-      margin-left: -150%; }
+      margin-left: -100%;
+      display: none; }
 
   footer {
     position: absolute;
@@ -1394,13 +1421,14 @@ span.wpcf7-not-valid-tip {
     float: left;
     width: 50%;
     white-space: normal; }
+    .thumbbox.follow {
+      display: none; }
     .thumbbox .desc {
       height: auto;
       padding: 10px;
       min-height: 95px; }
     .thumbbox .image {
-      overflow: hidden;
-      height: auto; }
+      overflow: hidden; }
       .thumbbox .image img {
         width: 100%;
         height: auto;

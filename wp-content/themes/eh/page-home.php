@@ -31,6 +31,7 @@ get_header(); ?>
     $linktext = get_sub_field('link_text');
     $image = get_sub_field('slider_image');
     $videomp4 = get_sub_field('slider_video_mp4');
+    $videoogv = get_sub_field('slider_video_ogv');
     $videowebm = get_sub_field('slider_video_webm');
 
     ?>
@@ -38,24 +39,31 @@ get_header(); ?>
 
 
     <div>
-      <div class="text-block">
-        <h1><?php echo $header; ?></h1>
-        <p class="sub"><?php echo $subheader; ?></p>
-        <a href="<?php echo $linkurl; ?>" class="btn"><?php echo $linktext; ?></a>
-      </div>
-      <?php if( $videomp4 ): ?>
-      <div class="video-container">
-        <video id="video" controls preload="true" autoplay loop muted>
-        <?php endif; ?>
-
-          <source src="<?php echo $videomp4; ?>" type="video/mp4" > 
-          <!--<source src="<?php bloginfo('stylesheet_directory'); ?>/img/vid-example.ogv" type="video/ogv" >-->    
-          <source src="<?php echo $videowebm; ?>" type="video/webm" > 
+      <div class="background-backup" style="background: url(<?php echo $image; ?>) no-repeat;">
+        
+          
+        
+        <div class="text-block">
+          <h1><?php echo $header; ?></h1>
+          <p class="sub"><?php echo $subheader; ?></p>
+          <a href="<?php echo $linkurl; ?>" class="btn"><?php echo $linktext; ?></a>
+        </div>
         <?php if( $videomp4 ): ?>
-        </video>
+        <div class="video-container">
+          <video id="video" controls preload="true" autoplay loop muted>
+          <?php endif; ?>
+
+            <source src="<?php echo $videomp4; ?>" type="video/mp4" > 
+            <!--<source src="<?php echo $videoogv; ?>" type="video/ogv" >-->
+            <source src="<?php echo $videowebm; ?>" type="video/webm" > 
+          <?php if( $videomp4 ): ?>
+          </video>
+        </div>
+        <?php endif; ?>
+        <img class="sliderimg" src="<?php echo $image; ?>" />
       </div>
-      <?php endif; ?>
-      <img class="sliderimg" src="<?php echo $image; ?>" />
+
+      <div class="overlay"></div>
     </div>
 
 
@@ -139,17 +147,10 @@ get_header(); ?>
   		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
       <br>
       <ul class="social">
-<<<<<<< HEAD
         <li class="ig"><a href="<?php the_field('ig_social'); ?>" title="">FOLLOW US</a></li>
         <li class="sc"><a href="<?php the_field('sc_social'); ?>" title="">EHSNAP</a></li>
         <li class="fb"><a href="<?php the_field('fb_social'); ?>" title="">LIKE US</a></li>
         <li class="tw"><a href="<?php the_field('tw_social'); ?>" title="">TWEET US</a></li>
-=======
-        <li class="ig"><a target="_blank" href="<?php the_field('ig_social'); ?>" title="">FOLLOW US</a></li>
-        <li class="sc"><a target="_blank" href="<?php the_field('sc_social'); ?>" title="">EHSNAP</a></li>
-        <li class="fb"><a target="_blank" href="<?php the_field('fb_social'); ?>" title="">LIKE US</a></li>
-        <li class="tw"><a target="_blank" href="<?php the_field('tw_social'); ?>" title="">TWEET US</a></li>
->>>>>>> origin/master
       </ul>
 
 
@@ -161,7 +162,7 @@ get_header(); ?>
 
   <!-- FEATURES SECTION -->
 
-  <h2>TOP <span>MODELS</span></h2>
+  <!--<h2>TOP <span>MODELS</span></h2>-->
 <?php if( have_rows('top_models') ): ?>
   <?php while( have_rows('top_models') ): the_row(); 
 
