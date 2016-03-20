@@ -6,16 +6,17 @@ $(document).ready(function(){
       var scroll = $(window).scrollTop();
 
        //>=, not <=
-      if (scroll >= 200) {
+      if (scroll >= 10) {
           //clearHeader, not clearheader - caps H
           $('#masthead').addClass('down');
-      } else if (scroll < 200) {
+      } else if (scroll < 10) {
           $('#masthead').removeClass('down');
       }
   }); //missing );
 
   setTimeout(function() {
     $('.subdesc').equalHeights();
+    //$('.image > img').equalHeights();
   }, 200);
 
 

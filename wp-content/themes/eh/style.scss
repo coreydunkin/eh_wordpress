@@ -641,7 +641,7 @@ a:active {
 	display: block;
 }
 
-@media screen and (min-width: 37.5em) {
+@media screen and (min-width: 800px) {
 	.menu-toggle {
 		display: none;
 	}
@@ -1058,6 +1058,10 @@ p {
 	}
 }
 
+.slider.sub {
+
+}
+
 .slider {
 	
 	overflow: hidden;
@@ -1066,9 +1070,28 @@ p {
 
 
 	&.sub {
+		.overlay {
+	    position: absolute;
+	    width: 100%;
+	    height: 100%;
+	    background: #000;
+	    top: 0;
+	    left: 0;
+	    opacity: 0.3;
+		}
+
+		.background-backup {
+			//background: none!important;
+			background-position: top center!important;
+			background-size: auto 525px!important;
+			min-height: 525px;
+		}
+
 		.slick-slide {
 			max-height: 525px;
+
 			img {
+				display: none;
 				opacity: 0.5;
 			}			
 		}
@@ -1233,8 +1256,10 @@ p {
 		margin: 0;
 		padding: 0;
 		height: 225px;
+		overflow: hidden;
 		img {
-			width: 100%;
+			width: auto;
+			min-width: 300px;
 			height: 230px;
 		}
 	}
@@ -1510,6 +1535,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
     float: right;
     font-weight: 400;
     box-shadow: none!important;
+    margin: 10px 0 0 0;
 }
 
 .ajax-loader {
@@ -1599,9 +1625,17 @@ and (min-width : 1824px) {
 /* STYLES GO HERE */
 }
 
+@media only screen
+and (min-width : 0px) and (max-width: 700px) {
+	
+
+}
+
+
+
 /* Small screens ----------- */
 @media only screen
-and (min-width : 0px) and (max-width: 600px) {
+and (min-width : 0px) and (max-width: 800px) {
 	
 	.video-container {
 		display: none;
@@ -1629,6 +1663,11 @@ and (min-width : 0px) and (max-width: 600px) {
 	}
 
 	.slider.sub {
+		.background-backup {
+			background: none!important;
+			min-height: initial!important;
+			height: auto;
+		}
 		.slick-slide {
 			height: auto!important;
 			margin-bottom: 0;
@@ -1647,6 +1686,7 @@ and (min-width : 0px) and (max-width: 600px) {
 				height: auto!important;
 				width: 100%;
 				min-height: inherit!important;
+				display: block;
 			}
 		}
 	}
@@ -1670,7 +1710,7 @@ and (min-width : 0px) and (max-width: 600px) {
 				padding-top: 70px;
 			}
 			.menu-toggle {
-				top: 12px;
+				top: 5px;
 			}
 		}
 	}
@@ -1801,7 +1841,9 @@ and (min-width : 0px) and (max-width: 600px) {
 @media only screen
 and (min-width : 0px) and (max-width: 960px) {
 /* STYLES GO HERE */
-
+	.thumbs.container {
+		max-width: 430px;
+	}
 
 	.menu-toggle {
 		position: fixed;
@@ -1880,6 +1922,9 @@ and (min-width : 0px) and (max-width: 960px) {
 
 	.thumbs {
 		white-space: none;
+		h3 {
+			line-height: normal;
+		}
 	}
 	.thumbbox {
 		float: left;
@@ -1895,11 +1940,13 @@ and (min-width : 0px) and (max-width: 960px) {
 		}
 		.image {
 			overflow: hidden;
-			//height: auto;
+			height: auto;
 			img {
-				width: 100%;
+				width: auto;
 				height: auto;
 				display: block;
+				max-height: 130px;
+				min-width: 100%;
 			}
 		}
 
@@ -2068,6 +2115,8 @@ and (max-device-width : 667px)
 and (orientation : landscape)
 and (-webkit-min-device-pixel-ratio : 2){
 /* STYLES GO HERE */
+
+
 }
  
 /* iPhone 6 (portrait)----------- */
@@ -2103,4 +2152,18 @@ and (max-device-width : 736px)
 and (orientation : portrait)
 and (-webkit-min-device-pixel-ratio : 3){
 /* STYLES GO HERE */
+}
+
+// portrait devices
+@media screen and (orientation:portrait) {  }
+
+// landscape devices
+@media screen and (orientation:landscape) { 
+
+.home .slider .slick-slide .background-backup {
+    height: 100%;
+    background-position: center center !important;
+    background-size: 100% auto !important;
+}
+
 }

@@ -10,13 +10,18 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
   <div class="slider sub">
-    <div>
+    <div class="background-backup" style="background: url(<?php the_field('features_image'); ?>) no-repeat;">
     	<div class="text-block">
     		<h1><?php the_field('features_title'); ?></span></h1>
     		<p class="sub"><?php the_field('features_sub_header'); ?></p>
     	</div>
     	<img class="sliderimg" src="<?php the_field('features_image'); ?>" />
+    <div class="overlay"></div>
+    <!-- hello -->
     </div>
+
+    
+
   </div>
 
   
@@ -27,7 +32,7 @@ get_header(); ?>
 <?php query_posts('category_name=features'); ?>
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
   <a class="thumbbox" href="<?php the_permalink(); ?>">
-    <div class="image">
+    <div class="image" style>
       <?php the_post_thumbnail(); ?>
     </div>
     <div class="desc subdesc">
