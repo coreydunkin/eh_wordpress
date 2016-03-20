@@ -10,7 +10,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
   <div class="slider sub">
-    <div class="background-backup" style="background: url(<?php the_field('features_image'); ?>) no-repeat;">
+    <div class="background-backup" style="background: url(<?php the_field('features_image'); ?>) no-repeat center center;">
     	<div class="text-block">
     		<h1><?php the_field('features_title'); ?></span></h1>
     		<p class="sub"><?php the_field('features_sub_header'); ?></p>

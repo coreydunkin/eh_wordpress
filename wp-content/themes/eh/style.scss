@@ -1083,8 +1083,12 @@ p {
 		.background-backup {
 			//background: none!important;
 			background-position: top center!important;
-			background-size: auto 525px!important;
+			//background-size: auto 525px!important;
 			min-height: 525px;
+			-webkit-background-size: cover!important;
+			-moz-background-size: cover!important;
+			-o-background-size: cover!important;
+			background-size: cover!important;
 		}
 
 		.slick-slide {
